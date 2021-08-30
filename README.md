@@ -19,4 +19,6 @@ port = 8000
 ```
 $ yarn dev
 ```
+# VERSION DE NODEJS
 
+v16.3.0
