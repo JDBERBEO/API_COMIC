@@ -16,12 +16,10 @@ app.use(morgan('dev'))
 app.get('/', async (req, res) =>{
   try {
     const randomComic = Math.floor(Math.random() * (1 - 2500)) + 2500
-    console.log(randomComic)
     const response= await axios.get(`https://xkcd.com/${randomComic}/info.0.json`)
     res.json(response.data)
-    console.log('response: ', response.data)
   } catch (error) {
-    console.error(error)
+    res.status(400).json({ message: error.message });
   }
 })
 
