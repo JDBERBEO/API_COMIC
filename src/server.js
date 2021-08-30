@@ -24,6 +24,6 @@ app.get('/', async (req, res) =>{
 })
 
 
-app.listen(8000, () => {
+app.listen(port, () => {
     console.log(`app running at http://localhost:${port}`)
 })

@@ -9,6 +9,10 @@
     "start": "node src/server.js"
   },
   "license": "MIT",
+  "engines": {
+    "node": "16.3.0",
+    "yarn": "1.22.10"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
